@@ -86,8 +86,16 @@
         </div>
     </nav>
     <!-- navbar end-->
+
+
     <!--Main Container start-->
     <main class="container">
+        <section class="searchBar m-auto mt-3">
+            <div class="input-group mb-3">
+                <input type="search" id="mySearch" onkeyup="searchCard()" class="form-control" placeholder="Search for task..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search" aria-hidden="true"></i></button>
+              </div>
+        </section>
         <section>
             <div id="taskContents" class="row"></div>
         </section>

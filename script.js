@@ -100,3 +100,19 @@ const editTask = (e) =>{
     })
     document.getElementById("openM").setAttribute("src",url);
   }
+
+
+  const searchCard = () =>{
+    let search,cards,i,title;
+    search = document.getElementById("mySearch").value.toUpperCase();
+    cardContainer = document.getElementById("taskContents");
+    cards = cardContainer.getElementsByClassName("card");
+    for (i = 0; i < cards.length; i++) {
+      title = cards[i].querySelector(".card-body h5.card-title");
+      if (title.innerText.toUpperCase().indexOf(search) > -1) {
+          cards[i].style.display = "";
+      } else {
+          cards[i].style.display = "none";
+      }
+  }
+  }
