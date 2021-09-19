@@ -99,5 +99,4 @@ const editTask = (e) =>{
       url=c.url;
     })
     document.getElementById("openM").setAttribute("src",url);
-    console.log(url);
   }
